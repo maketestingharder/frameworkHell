@@ -1,0 +1,28 @@
+package cucumber.unit.steps;
+
+import cucumber.annotation.en.Given;
+import cucumber.annotation.en.Then;
+import cucumber.annotation.en.When;
+
+/**
+ * email: maketestingharder@gmail.com
+ * blog: www.maketestingharder.blogspot.com
+ * FB: www.facebook.com/maketestingharder
+ */
+public class CucumberUnitTestSteps {
+
+    @Given("Unit Test Setup$")
+    public void Unit_Test_Setup(){
+       System.out.println("Cucumber Unit test - @Given");
+    }
+
+    @When("Action is performed$")
+    public void Action_is_performed(){
+        System.out.println("Cucumber Unit test - @When");
+    }
+
+    @Then("Output is verified$")
+    public void Output_is_verified(){
+        System.out.println("Cucumber Unit test - @Then");
+    }
+}
