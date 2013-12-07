@@ -95,6 +95,6 @@ public class JBehaveIT extends JUnitStories {
     }
     @Override
     protected List<String> storyPaths() {
-        return Arrays.asList( "jbehave/Integration.story" );
+        return Arrays.asList( "jbehave/IntegrationTests.story" );
     }
 }

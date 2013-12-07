@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
  * FB: www.facebook.com/maketestingharder
  */
 @RunWith(Cucumber.class)
-@Cucumber.Options(format={"json:target/report.json", "html:target/report"},
-        features="classpath:cucumber/integration/IntegrationTests.feature")
+@Cucumber.Options(
+        features={"src/test/resources/cucumber/integration/IntegrationTests.feature"},
+        glue="cucumber.integration.steps")
 public class CucumberIT {
 }
